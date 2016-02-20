@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"  media="screen,projection"/>
+    <style>.mason-green {
+  background-color: #1e5d38 !important;
+}
+.mason-green.lighten-1 {
+  background-color: #387752 !important;
+}
+.mason-green.lighten-2 {
+  background-color: #51906b !important;
+}
+.mason-green.lighten-3 {
+  background-color: #6baa85 !important;
+}
+.mason-green.lighten-4 {
+  background-color: #84c39e !important;
+}
+.mason-green.lighten-5 {
+  background-color: #9ddcb7 !important;
+}
+
+.mason-green-text {
+  color: #1e5d38;
+}
+
+.srct-black {
+  background-color: #242A38;
+}
+
+.footer-copyright {
+  background-color: #242A38 !important;
+}
+.page-footer {
+  background-color: #2C3344 !important; 
+}
+
+.mason-gold {
+  background-color: #e2a82b;
+}
+.mason-gold.lighten-1 {
+  background-color: #fcc245 !important;
+}
+.mason-gold.lighten-2 {
+  background-color: #ffdb5e !important;
+}
+.mason-gold.lighten-3 {
+  background-color: #fff578 !important;
+}
+.mason-gold.lighten-4 {
+  background-color: #ffff91 !important;
+}
+.mason-gold.lighten-5 {
+  background-color: #ffffaa !important;
+}
+
+.mason-red {
+  background-color: #ac1d37;
+}
+.mason-red.lighten-1 {
+  background-color: #c63751 !important;
+}
+.mason-red.lighten-2 {
+  background-color: #df506a !important;
+}
+.mason-red.lighten-3 {
+  background-color: #f96a84 !important;
+}
+.mason-red.lighten-4 {
+  background-color: #ff839d !important;
+}
+.mason-red.lighten-5 {
+  background-color: #ff9cb6 !important;
+}
+
+
+.mason-blue {
+  background-color: #425195;
+}
+.mason-blue.lighten-1 {
+  background-color: #5c6baf !important;
+}
+.mason-blue.lighten-2 {
+  background-color: #7584c8 !important;
+}
+.mason-blue.lighten-3 {
+  background-color: #8f9ee2 !important;
+}
+.mason-blue.lighten-4 {
+  background-color: #a8b7fb !important;
+}
+.mason-blue.lighten-5 {
+  background-color: #c1d0ff !important;
+}
+.brand-logo img {
+  max-height: 0.8em;
+  vertical-align: baseline;
+  margin-right:0.1em;
+}
+nav .material-icons.right {
+  margin-left:0;
+}
+.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+  background-color: rgba(0,0,0,0);
+}
+#index-banner {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(masonwinter.jpg);
+  background-size: cover;
+  background-position:50% 30%;
+}
+#index-banner h1 {
+  font-size: 15em;
+}
+.full-height {
+  height:75vh;
+}
+#index-banner h1 img {
+  max-width:100%;
+  width:700px;
+  margin-top:64px;
+  filter: drop-shadow(0 8px 17px rgba(0,0,0,0.2));
+  -webkit-filter: drop-shadow(0 8px 17px rgba(0,0,0,0.2));
+}
+nav {
+  box-shadow: none;
+  transition: background-color .3s;
+}
+nav:hover {
+  background-color: rgba(36, 42, 56,1 ) !important;
+}
+.dropdown-content.srct-black {
+  background-color: rgba(36, 42, 56, 1);
+}
+.navbar-fixed {
+  position:fixed;
+}
+.btn-large {
+  width:100%;
+}
+.unstick-btns {
+  margin-bottom:10px;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+</style>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <ul id="menu-dropdown" class="dropdown-content srct-black white-text">
+      <li><a class="white-text" href="constitution.html">Constitution</a></li>
+      <li><a class="white-text" href="usage.html">Usage Policy</a></li>
+      <li><a class="white-text" href="privacy.html">Privacy Policy</a></li>
+      <li><a class="white-text" href="ip.html">Intellectual Property</a></li>
+      <li><a class="white-text" href="freedom.html">Software Freedom</a></li>
+      <li><a class="white-text" href="logos.html">Logos</a></li>
+    </ul>
+    <ul id="mobile-menu-dropdown" class="dropdown-content">
+      <li><a href="constitution.html">Constitution</a></li>
+      <li><a href="usage.html">Usage Policy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="ip.html">Intellectual Property</a></li>
+      <li><a href="freedom.html">Software Freedom</a></li>
+      <li><a href="logos.html">Logos</a></li>
+    </ul>
+    <div class="navbar-fixed">
+      <nav class="srct-black" id="main-nav">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo"><!--<img src="https://srct.gmu.edu/static/img/SRCT_square_white.png" alt="SRCT">-->Mason<strong>SRCT</strong></a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/events.html">Events</a></li>
+            <li><a href="/calendar.html">Calendar</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/people.html">People</a></li>
+            <li><a href="#!" data-activates="menu-dropdown" data-beloworigin="true" class="dropdown-button">Documents<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/events.html">Events</a></li>
+            <li><a href="/calendar.html">Calendar</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/people.html">People</a></li>
+            <li><a href="#!" data-activates="mobile-menu-dropdown" class="dropdown-button">Documents<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="section no-pad-bot full-height" id="index-banner">
+      <div class="container center">
+        <h1 class="header center white-text"><img src="SRCT_rectangle.svg"></h1>
+        <div class="row center" id="hero-btns">
+          <div class="col s12 m3 offset-m3 unstick-btns">
+            <a href="#" class="btn-large waves-effect hero-btn mason-green waves-light white-text">About Us</a>
+          </div>
+          <div class="col s12 m3">
+            <a href="#" class="btn-large waves-effect hero-btn mason-green waves-light white-text">Get Involved</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="section no-pad-bot srct-black valign-wrapper">
+      <div class="container valign">
+        <div class="row">
+          <div class="col s12 white-text center">
+            <strong>Join us for our next meeting!</strong> Wednesday, Feburary 24th at 7:20pm in JC Room G.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 center">
+              <h3><i class="mdi-content-send brown-text"></i></h3>
+              <h4>Our Mission</h4>
+              <p class="left-align light"><strong>S</strong>tudent-<strong>R</strong>un <strong>C</strong>omputing and
+<strong>T</strong>echnology (SRCT, pronounced "<em>circuit</em>") is a student
+organization at <a href="https://www.gmu.edu/">George Mason University</a> which
+enhances student computing at our school by developing and maintaining systems
+that provide specific services for Mason's community.</p>
+<p class="left-align light">We were founded in 2011 to be a place where students could work together,
+share their knowledge, and build really neat projects for the benefit of everyone
+at Mason. See some of the ways we've improved life on campus on the <a href="/projects/">projects page</a>.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h2 class="center">Our Mission</h2>
+              <p class="left-align light"><strong>S</strong>tudent-<strong>R</strong>un <strong>C</strong>omputing and
+<strong>T</strong>echnology (SRCT, pronounced "<em>circuit</em>") is a student
+organization at <a href="https://www.gmu.edu/">George Mason University</a> which
+enhances student computing at our school by developing and maintaining systems
+that provide specific services for Mason's community.</p>
+<p class="left-align light">We were founded in 2011 to be a place where students could work together,
+share their knowledge, and build really neat projects for the benefit of everyone
+at Mason. See some of the ways we've improved life on campus on the <a href="/projects/">projects page</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center mason-green-text"><i class="material-icons">announcement</i></h2>
+              <h5 class="center">Mission</h5>
+
+              <p class="light"><strong>S</strong>tudent-<strong>R</strong>un <strong>C</strong>omputing and
+<strong>T</strong>echnology (SRCT, pronounced "<em>circuit</em>") is a student
+organization at <a href="https://www.gmu.edu/">George Mason University</a> which
+enhances student computing at our school by developing and maintaining systems
+that provide specific services for Mason's community.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">computer</i></h2>
+              <h5 class="center">Speeds up development</h5>
+
+              <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">Speeds up development</h5>
+
+              <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Terms of Service</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Club Bylaws</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Project Source</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright srct-black">
+        <div class="container grey-text text-lighten-4">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;display:none"></a>This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">MasonSRCT</span> is licensed under a <a class="grey-text text-lighten-4" style="text-decoration:underline" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+        
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script>
+    $(function() {
+      $(".dropdown-button").dropdown();
+      $(".button-collapse").sideNav();
+      $(document).on('scroll', function (e) {
+        $('#main-nav').css('cssText', "background-color: rgba(36, 42, 56, "+($(document).scrollTop() / 300)+")");
+      });
+      $('#main-nav').css('cssText', "background-color: rgba(36, 42, 56, "+($(document).scrollTop() / 300)+")");
+    })
+    </script>
+  </body>
+</html>
