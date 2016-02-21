@@ -150,8 +150,20 @@ body {
   flex-direction: column;
 }
 
-main {
+#main {
   flex: 1 0 auto;
+}
+#index-hack {
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.navbar-absolute {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+.parallax-container {
+  height:380px;
 }
 </style>
 
@@ -176,8 +188,8 @@ main {
       <li><a href="freedom.html">Software Freedom</a></li>
       <li><a href="logos.html">Logos</a></li>
     </ul>
-    <div class="navbar-fixed">
-      <nav class="srct-black" id="main-nav">
+    <div class="navbar-absolute">
+      <nav class="transparent" id="main-nav">
         <div class="nav-wrapper container">
           <a href="#" class="brand-logo"><!--<img src="https://srct.gmu.edu/static/img/SRCT_square_white.png" alt="SRCT">-->Mason<strong>SRCT</strong></a>
           <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -239,11 +251,22 @@ that provide specific services for Mason's community.</p>
 <p class="left-align light">We were founded in 2011 to be a place where students could work together,
 share their knowledge, and build really neat projects for the benefit of everyone
 at Mason. See some of the ways we've improved life on campus on the <a href="/projects/">projects page</a>.</p>
-            </div>
           </div>
+        </div>
 
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+      <div class="container no-pad-bot">
+        <div class="section">
+          <div class="row center">
+            <h3 id="index-hack" class="header col s12 light white-text"></h3>
+          </div>
         </div>
       </div>
+      <div class="parallax"><img src="srctmix2.jpg"></div>
+    </div>
     <div class="section">
       <div class="container">
         <div class="row">
@@ -329,10 +352,7 @@ that provide specific services for Mason's community.</p>
     $(function() {
       $(".dropdown-button").dropdown();
       $(".button-collapse").sideNav();
-      $(document).on('scroll', function (e) {
-        $('#main-nav').css('cssText', "background-color: rgba(36, 42, 56, "+($(document).scrollTop() / 300)+")");
-      });
-      $('#main-nav').css('cssText', "background-color: rgba(36, 42, 56, "+($(document).scrollTop() / 300)+")");
+      $('.parallax').parallax();
     })
     </script>
   </body>
