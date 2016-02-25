@@ -188,8 +188,8 @@ body {
       <li><a href="freedom.html">Software Freedom</a></li>
       <li><a href="logos.html">Logos</a></li>
     </ul>
-    <div class="navbar-absolute">
-      <nav class="transparent" id="main-nav">
+    <div class="navbar-fixed">
+      <nav class="srct-black" id="main-nav">
         <div class="nav-wrapper container">
           <a href="#" class="brand-logo"><!--<img src="https://srct.gmu.edu/static/img/SRCT_square_white.png" alt="SRCT">-->Mason<strong>SRCT</strong></a>
           <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -228,15 +228,38 @@ body {
 
       </div>
     </div>
-    <div class="section no-pad-bot srct-black valign-wrapper">
+    <!-- Begin Alerts container and Model popup -->
+    <div id="alert-container" class="section no-pad-bot deep-orange darken-1 white-text valign-wrapper hide">
       <div class="container valign">
         <div class="row">
-          <div class="col s12 white-text center">
-            <strong>Join us for our next meeting!</strong> Wednesday, Feburary 24th at 7:20pm in JC Room G.
+          <div class="col s12 center">
+            <strong>Alert!</strong> <span id="alert-message"></span> <a class="white-text modal-trigger" style="text-decoration: underline;" href="#alert-popup">Read more.</a>
           </div>
         </div>
       </div>
     </div>
+    <div id="alert-popup" class="modal">
+      <div class="modal-content">
+        <h4>Alert description</h4>
+        <p id="alert-description"></p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
+      </div>
+    </div>
+
+    <!-- Begin Meeting container -->
+    <div id="meeting-container" class="section no-pad-bot srct-black valign-wrapper">
+      <div class="container valign">
+        <div class="row">
+          <div class="col s12 white-text center">
+            <strong id="meeting-description">Fetching meeting data...</strong> <span id="meeting-time"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Begin mission statement -->
     <div class="container">
         <div class="section">
           <div class="row">
@@ -253,10 +276,10 @@ share their knowledge, and build really neat projects for the benefit of everyon
 at Mason. See some of the ways we've improved life on campus on the <a href="/projects/">projects page</a>.</p>
           </div>
         </div>
-
       </div>
     </div>
 
+    <!-- Begin first parallax image -->
     <div class="parallax-container valign-wrapper">
       <div class="container no-pad-bot">
         <div class="section">
@@ -267,6 +290,8 @@ at Mason. See some of the ways we've improved life on campus on the <a href="/pr
       </div>
       <div class="parallax"><img src="srctmix2.jpg"></div>
     </div>
+
+    <!-- Begin "Who we are" descriptions -->
     <div class="section">
       <div class="container">
         <div class="row">
@@ -297,7 +322,68 @@ at Mason. See some of the ways we've improved life on campus on the <a href="/pr
         </div>
       </div>
     </div>
+        <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">people</i></h2>
+              <h5 class="center">Hack with friends</h5>
 
+              <p class="light">We work hard to maintain a welcoming and productive environment for hackers of all skill levels. </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">event_available</i></h2>
+              <h5 class="center">Weekly meetings</h5>
+
+              <p class="light">Join us for our weekly meetings where we discuss the latest changes and long term goals of all our projects.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">mic</i></h2>
+              <h5 class="center">Talks and workshops</h5>
+
+              <p class="light">Every week we provide talks and/or workshops to teach all our members new, valuable skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">people</i></h2>
+              <h5 class="center">Hack with friends</h5>
+
+              <p class="light">We work hard to maintain a welcoming and productive environment for hackers of all skill levels. </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">event_available</i></h2>
+              <h5 class="center">Weekly meetings</h5>
+
+              <p class="light">Join us for our weekly meetings where we discuss the latest changes and long term goals of all our projects.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">mic</i></h2>
+              <h5 class="center">Talks and workshops</h5>
+
+              <p class="light">Every week we provide talks and/or workshops to teach all our members new, valuable skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Begin second parallax image -->
     <div class="parallax-container valign-wrapper">
       <div class="container no-pad-bot">
         <div class="section">
@@ -308,6 +394,8 @@ at Mason. See some of the ways we've improved life on campus on the <a href="/pr
       </div>
       <div class="parallax"><img src="hacknc14.jpg"></div>
     </div>
+
+    <!-- Begin Events dialog -->
     <div class="section">
       <div class="container">
         <div class="row">
@@ -339,6 +427,7 @@ at Mason. See some of the ways we've improved life on campus on the <a href="/pr
       </div>
     </div>
 
+    <!-- Begin page footer -->
     <footer class="page-footer">
       <div class="container">
         <div class="row">
@@ -373,6 +462,55 @@ at Mason. See some of the ways we've improved life on campus on the <a href="/pr
       $(".dropdown-button").dropdown();
       $(".button-collapse").sideNav();
       $('.parallax').parallax();
+      $(document).on('scroll', function (e) {
+        $('#main-nav').css('cssText', "background-color: rgba(36, 42, 56, "+($(document).scrollTop() / 300)+")");
+      });
+      $('#main-nav').css('cssText', "background-color: rgba(36, 42, 56, "+($(document).scrollTop() / 300)+")");
+      // Public API Key for Google Calendar access (Key from nander13's gmail account)
+      var apiKey = "AIzaSyDt_GN04VlgtFDTLHBbV0LaL0c8xG7drSY";
+
+      // Instead of loading the _entire_ Google API library, let's just make a GET request
+      console.log("wat");
+      $.getJSON("https://www.googleapis.com/calendar/v3/calendars/kaiuicpoki9p3u92eklent0eec%40group.calendar.google.com/events",
+      {
+        // Expand one recurring event to multiple events
+        "singleEvents":"true",
+        "orderBy":"startTime",
+        // Starting now until we hit the first event.
+        "timeMin":new Date().toISOString(),
+        "showDeleted":"false",
+        "maxResults":"2",
+        // Change this if the title of the weekly meeting on the calendar changes!
+        "key":apiKey
+      },
+      function(data) {
+        console.log(data)
+        "use strict";
+        for (var i=0,len=data.items.length;i<len;i++) {
+          var event = data.items[i];
+          console.log(event);
+          if (event.summary.indexOf("[Admiralty]") >= 0) {
+            $("#alert-container").removeClass("hide");
+            $("#alert-description").text(event.description)
+            $("#alert-message").text(event.summary.substr(12));
+            $('.modal-trigger').leanModal({
+                dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                opacity: .5, // Opacity of modal background
+              }
+            );
+          } else {
+            var d = new Date(event.start.dateTime),
+                monthName = d.toLocaleString("en-us", {month: "long"}),
+                dateOptions = { weekday: 'long', month: 'long', day: 'numeric' },
+                timeOptions = { hour: 'numeric', minute: 'numeric'},
+                dateString = d.toLocaleString("en-us", dateOptions),
+                timeString = d.toLocaleString("en-us", timeOptions);
+            $("#meeting-time").text(dateString + " at " + timeString + " in " + event.location); //"In "+event.location+" at "+timeString+" on "+dateString +".");
+            $("#meeting-description").text("Join us for our next meeting!")
+          }
+        }
+
+      });
     })
     </script>
   </body>
